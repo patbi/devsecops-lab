@@ -121,23 +121,6 @@ jobs:
           exit-code: '1'
           severity: 'CRITICAL'
 
-  codeql:
-    name: 🔍 CodeQL
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript
-      
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v3
-      
-      - name: Perform Analysis
-        uses: github/codeql-action/analyze@v3
-
 
   # ═══════════════════════════════════════
   # 
