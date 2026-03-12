@@ -320,12 +320,12 @@ Après l'exécution du pipeline, nous observons ceci :
 
 ### 3.1 Vulnérabilités détectées
 
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/ic-d.png)
+
+
 - GitHub Security : Onglet "Security" > "Code scanning"
 
 - Artifacts : Télécharger les rapports JSON
-
-![Preview](https://github.com/patbi/devsecops-lab/blob/main/ic-d.png)
-
 
 - Logs : Détails dans chaque job
 
