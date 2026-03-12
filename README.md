@@ -316,7 +316,7 @@ jobs:
 
 Après l'exécution du pipeline, nous observons ceci :
 
-![Preview](https://github.com/patbi/devsecops-lab/blob/main/vul-d.png)
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/vul-d.png) 
 
 ### 3.1 Vulnérabilités détectées
 
@@ -325,6 +325,8 @@ Après l'exécution du pipeline, nous observons ceci :
 - Artifacts : Télécharger les rapports JSON
 
 - Logs : Détails dans chaque job
+
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/ic-d.png)
 
 
 
