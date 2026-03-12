@@ -18,6 +18,7 @@ Nous héritons d'une application Node.js volontairement vulnérable. Notre missi
 
 
 ## Section 1 : Setup
+### 1.1 Créer le projet
 
 ```bash
 # Créer un nouveau repo sur GitHub
@@ -27,6 +28,19 @@ cd devsecops-lab
 
 # Structure
 mkdir -p src .github/workflows
+```
+
+### 1.2 Application vulnérable : src/package.json :
+
+```bash
+{
+  "name": "vulnerable-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1"
+  }
+}
 ```
 
 2. [Etape 2: Détecter automatiquement les vulnérabilités (SAST, SCA, DAST)]()
