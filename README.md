@@ -324,9 +324,13 @@ Après l'exécution du pipeline, nous observons ceci :
 
 - Artifacts : Télécharger les rapports JSON
 
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/ic-d.png)
+
+
 - Logs : Détails dans chaque job
 
-![Preview](https://github.com/patbi/devsecops-lab/blob/main/ic-d.png)
+
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/wkf-1.png) 
 
 
 
