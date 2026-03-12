@@ -333,14 +333,6 @@ Après l'exécution du pipeline, nous observons ceci :
 ![Preview](https://github.com/patbi/devsecops-lab/blob/main/wkf-1.png) 
 
 
-
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
-
 4. [Etape 4: Comprendre le DevSecOps en pratique]()
 
 	 - step
