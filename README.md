@@ -96,7 +96,9 @@ CMD ["node", "server.js"]
 	
 ## Section 2 : Pipeline DevSecOps
 
-### 2.1 Workflow GitHub Actions | Créez le fichier security.yml et renseigner le code ci-dessous -->> .github/workflows/security.yml 
+### 2.1 Workflow GitHub Actions | Créez le fichier security.yml dans le rep | .github/workflows/security.yml 
+
+### Ensuite entrez le code ci-dessous  
 
 ```bash
 name: DevSecOps Pipeline
