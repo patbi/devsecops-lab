@@ -55,7 +55,7 @@ jobs:
         run: semgrep ci --config=auto --sarif -o result.sarif
       - name: Upload results
         if: failure() && steps.scan.outcome == 'failure'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: result.sarif
           path: result.sarif
