@@ -31,8 +31,7 @@ jobs:
   # Détecte les vulnérabilités dans le CODE SOURCE : injection SQL, XSS, failles de sécurité
   # Outil : Semgrep avec règles OWASP Top 10, security-audit, et détection de secrets
   # ═══════════════════════════════════════
-
-  #  sast:
+#  sast:
 #    name: 🔍 SAST
 #    runs-on: ubuntu-latest
 #    steps:
@@ -45,7 +44,6 @@ jobs:
 #            p/security-audit
 #            p/secrets
 #            p/owasp-top-ten
-
 
   # ═══════════════════════════════════════
   # 3. SCA - Analyse des dépendances (Software Composition Analysis)

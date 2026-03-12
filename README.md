@@ -307,7 +307,26 @@ jobs:
           fi
 ```
 
+
 3. [Etape 3: Corriger les failles de sécurité courantes]()
+
+## Section 3 : Analyse des résultats 
+
+### 3.1 Vulnérabilités détectées
+
+Après l'exécution du pipeline, nous observons ceci :
+
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/vul-d.png)
+
+### 3.1 Vulnérabilités détectées
+
+- GitHub Security : Onglet "Security" > "Code scanning"
+
+- Artifacts : Télécharger les rapports JSON
+
+- Logs : Détails dans chaque job
+
+
 
 	 - step
 	 - step
