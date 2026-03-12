@@ -12,12 +12,22 @@
 
 1. [Etape 1: Mettre en place un pipeline CI/CD sécurisé]()
 
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
+## Scénario
+
+Nous héritons d'une application Node.js volontairement vulnérable. Notre mission : créer un pipeline DevSecOps pour détecter et corriger toutes les failles avant le déploiement.
+
+
+## Section 1 : Setup
+
+```bash
+# Créer un nouveau repo sur GitHub
+# Puis cloner
+git clone https://github.com/<notre-username>/<repo>.git
+cd devsecops-lab
+
+# Structure
+mkdir -p src .github/workflows
+```
 
 2. [Etape 2: Détecter automatiquement les vulnérabilités (SAST, SCA, DAST)]()
 	
