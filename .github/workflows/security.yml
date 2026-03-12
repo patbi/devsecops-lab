@@ -51,14 +51,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Semgrep scan
-        id: scan
-        run: semgrep ci  
-      - name: Upload results
-        if: failure() && steps.scan.outcome == 'failure'
-        uses: actions/upload-artifact@v4
+        run: |
+          semgrep --config=p/security-audit \
+                  --error \
+                  --json \
+                  -o semgrep-results.json \
+                  .
+            # Sauvegarder les résultats même si le scan échoue
+      - name: Upload des résultats
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
         with:
-          name: result.sarif
-          path: result.sarif
+          name: semgrep-results
+          path: semgrep-results.json
 
   # ═══════════════════════════════════════
   # 3. SCA - Analyse des dépendances (Software Composition Analysis)
