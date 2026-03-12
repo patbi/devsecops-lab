@@ -45,26 +45,20 @@ jobs:
 #            p/secrets
 #            p/owasp-top-ten
 
+
   sast:
     name: 🔍 SAST
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Semgrep scan
-        run: |
-          semgrep --config=p/security-audit \
-                  --error \
-                  --json \
-                  -o semgrep-results.json \
-                  .
-            # Sauvegarder les résultats même si le scan échoue
-      - name: Upload des résultats
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        if: always()
+      - uses: actions/checkout@v4
+      
+      - name: Run Semgrep
+        uses: returntocorp/semgrep-action@v1
         with:
-          name: semgrep-results
-          path: semgrep-results.json
-
+          config: >-
+            p/security-audit
+            p/secrets
+            p/owasp-top-ten
   # ═══════════════════════════════════════
   # 3. SCA - Analyse des dépendances (Software Composition Analysis)
   # Détecte les vulnérabilités dans les BIBLIOTHÈQUES et packages tiers (npm, etc.)
