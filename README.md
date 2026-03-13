@@ -335,10 +335,21 @@ Après l'exécution du pipeline, nous observons ceci :
 
 4. [Etape 4: Comprendre le DevSecOps en pratique]()
 
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
-	 - step
+## Section 4 : Corrections
 
+### 4.1 Mise à jour des dépendances | src/package.json (corrigé) :
+
+```bash
+{
+ "name": "secure-app",
+ "version": "2.0.0",
+ "dependencies": {
+ "express": "^4.18.2",
+ "jsonwebtoken": "^9.0.2",
+ "helmet": "^7.1.0",
+ "express-rate-limit": "^7.1.0",
+ "express-validator": "^7.0.1",
+ "dotenv": "^16.3.1"
+ }
+}
+```
