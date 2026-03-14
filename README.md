@@ -518,3 +518,4 @@ git push origin main
 
 Le pipeline devrait maintenant être vert ! ✅
 
+![Preview](https://github.com/patbi/devsecops-lab/blob/main/pipeline.png) 
